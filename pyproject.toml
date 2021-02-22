@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "rest"
+version = "0.1.0"
+description = ""
+authors = ["WillyHHsu"]
+license = "MIT License"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+fastapi = "^0.63.0"
+FastAPI-SQLAlchemy = "^0.2.1"
+uvicorn = "^0.13.3"
+python-dotenv = "^0.15.0"
+psycopg2-binary = "^2.8.6"
+databases = {extras = ["postgresql"], version = "^0.4.1"}
+
+[tool.poetry.dev-dependencies]
+autopep8 = "^1.5.5"
+ipython = "^7.20.0"
+ipykernel = "^5.5.0"
+requests = "^2.25.1"
+pytest = "^6.2.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
